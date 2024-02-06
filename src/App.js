@@ -1,12 +1,13 @@
 // App.js
 import React from 'react';
-import Header from './Header'; // Import the Header component
+import Header from './Header'; 
+import './App.css'; 
 
 function App() {
   return (
-    <div>
-      <Header /> {/* Use the Header component */}
-      <p>This is the main content of the app.</p>
+    <div className="App">
+      <Header />
+
     </div>
   );
 }
