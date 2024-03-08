@@ -1,49 +1,103 @@
-/* styles.css */
+
 
 header {
-  background-color: #333; /* Dark background color */
-  color: #fff; /* White text color */
-  padding: 20px; /* Add some padding */
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Align items with space-between */
-  align-items: center; /* Align items vertically */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items vertically */
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 50px; /* Adjust the width of the logo */
-  height: 50px; /* Adjust the height of the logo */
-  margin-right: 10px; /* Add some margin to the right of the logo */
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 h1 {
-  margin: 0; /* Remove margin */
+  margin: 0;
 }
 
 nav ul {
-  list-style-type: none; /* Remove bullet points */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  display: inline-block; /* Display list items horizontally */
-  margin-right: 20px; /* Add some margin between list items */
+  display: inline-block;
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Remove margin from the last list item */
+  margin-right: 0;
 }
 
 nav ul li a {
-  color: #fff; /* White text color for links */
-  text-decoration: none; /* Remove underline from links */
+  color: #fff;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
+}
+
+/* carousel */
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel-container {
+  position: relative;
+  width: 70%; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-inner {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden; /* Ensure items stay within container */
+}
+
+.carousel-item {
+  flex: 1;
+}
+
+.carousel-item img {
+  max-width: 100%; /* Adjusted to 100% */
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
 }

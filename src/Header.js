@@ -1,6 +1,6 @@
 // Header.js
 import React from 'react';
-import logo from './logoo.png';
+import logo from './Images/logoo.png';
 
 function Header() {
   return (
