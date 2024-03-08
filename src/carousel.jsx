@@ -50,12 +50,14 @@ function Carousel() {
                 ))}
             </div>
             <div className="mt-3 text-center">
-                <span className="carousel-control-prev" onClick={handlePrev} style={{ left: 0 }}>
-                    &lt;
-                </span>
-                <span className="carousel-control-next" onClick={handleNext} style={{ right: 0 }}>
-                    &gt;
-                </span>
+                <div className="carousel-controls">
+                    <span className="carousel-control-prev" onClick={handlePrev}>
+                        &lt;
+                    </span>
+                    <span className="carousel-control-next" onClick={handleNext}>
+                        &gt;
+                    </span>
+                </div>
             </div>
         </div>
     );
